@@ -6,9 +6,18 @@ title: Code Urls
 <div class="container box">
 
 <ul>
-	{% for post in site.posts %}
-	<li><h4>{{ post.title }}</h4><span>{{post.content}}</span></li>
+	
+	{% for cat in site.categories %}
+	<li>
+		<h4>{{cat[0]}}</h4>
+		<div>
+		{% for post in cat[1] %}
+			<span><a target="_blank" href="{{ post.siteurl }}">{{ post.title }}</a></span>
+		{% endfor %}
+		</div>
+	</li>
 	{% endfor %}
+	
 </ul>
 
 </div>
