@@ -1,0 +1,26 @@
+<html>
+        {% include header.html %}
+        <body>
+                <div id="logo">
+                        <h1><a href="/">Langwan Luo</a></h1></div>
+                <div id="wrapper">
+                        <div id="content">
+                                <a target="_blank" style="float:right;margin-top:15px" href="http://twitter.com/share?url=http://www.langwan.org{{ page.url }}&via=langwan&text={{ page.title }}"><span class="balloon">retweet</span></a>
+                                <h2>{{ page.title }}</h2>
+                                <div class="cnt">
+                                {{ content }}
+                                </div>
+                                <div id="disqus_thread"></div>
+                                <script type="text/javascript">
+                                  (function() {
+                                   var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+                                   dsq.src = 'http://langwan.disqus.com/embed.js';
+                                   (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                  })();
+                                </script>
+                                <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript=lzyyblog">comments powered by Disqus.</a></noscript>
+                        </div>
+                        {% include footer.html %}
+                </div>
+        </body>
+</html>

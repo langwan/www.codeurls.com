@@ -1,0 +1,10 @@
+<div id="sidebar">
+    <ul>
+            {% for category in site.categories %}
+            <li><a href="/category.html#{{category[0]}}"> {{ category[0]  }}</a></li>
+            {% endfor %}
+            <li>
+            	<a href="/recommend.html">RECOMMEND</a>
+            </li>
+    </ul>
+</div>

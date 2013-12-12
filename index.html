@@ -1,0 +1,14 @@
+---
+layout: default
+title: Code Urls
+---
+
+<div class="container box">
+
+<ul>
+	{% for post in site.posts %}
+	<li><h4>{{ post.title }}</h4><span>{{post.content}}</span></li>
+	{% endfor %}
+</ul>
+
+</div>
