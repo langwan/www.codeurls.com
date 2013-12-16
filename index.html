@@ -18,7 +18,9 @@ title: Code Urls
 		{% for post in cat[1] %}
 			<a target="_blank" href="{{ post.siteurl }}">{{ post.title }}</a>
 			{% if post.twitter %}
-			<a href="https://twitter.com/{{ post.twitter }}"><i class="tag fa fa-twitter"></i></a>
+			<a href="https://twitter.com/{{ post.twitter }}"><i class="fa fa-twitter"></i></a>
+			{% if post.github %}
+			<a href="https://github.com/{{ post.github }}"><i class="fa fa-github"></i></a>
 			{% endif %}
 			
 			 |
