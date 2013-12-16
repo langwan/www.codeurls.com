@@ -9,7 +9,7 @@ title: Code Urls
 	<li>
 	<a href="https://twitter.com/share" class="twitter-share-button" data-via="langwan" data-lang="en">Tweet</a> 
 
-	<a href="https://twitter.com/CodeUrlsCom" data-show-count=true class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @CodeUrlsCom</a>
+	<a href="https://twitter.com/langwan" data-show-count=true class="twitter-follow-button" data-show-count="false" data-lang="en">Follow @langwan</a>
 	</li>
 	{% for cat in site.categories %}
 	<li>
@@ -18,11 +18,11 @@ title: Code Urls
 		{% for post in cat[1] %}
 			<a target="_blank" href="{{ post.siteurl }}">{{ post.title }}</a>
 			{% if post.twitter %}
-			<a href="https://twitter.com/{{ post.twitter }}"><i class="fa fa-twitter"></i></a>
+			<a href="https://twitter.com/{{ post.twitter }}"><i class="tag fa fa-twitter"></i></a>
+			{% endif %}
 			{% if post.github %}
 			<a href="https://github.com/{{ post.github }}"><i class="fa fa-github"></i></a>
-			{% endif %}
-			
+			{% endif %}			
 			 |
 		{% endfor %}
 		</div>
